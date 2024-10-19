@@ -27,6 +27,32 @@
         </nav>
     </header>
 
+    <!-- Adicionar botão para alternar modo escuro -->
+<header>
+    <h1>Global News Hub</h1>
+    <button id="toggleDarkMode">Modo Escuro</button>
+    <nav>
+        <input type="text" id="searchBar" placeholder="Buscar jornal...">
+        <ul id="newsList">
+            <!-- Itens da lista -->
+        </ul>
+    </nav>
+</header>
+
+<!-- Adicionar indicador de carregamento -->
+<div id="loading">
+    <div class="spinner"></div>
+</div>
+
+<!-- Adicionar seção de favoritos -->
+<section id="favorites">
+    <h2>Favoritos</h2>
+    <ul id="favoritesList">
+        <!-- Favoritos adicionados pelo usuário -->
+    </ul>
+</section>
+
+
     <main>
         <iframe id="newsFrame" src="https://www.nytimes.com" frameborder="0"></iframe>
     </main>
