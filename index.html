@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global News Hub</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="img/logoGlobalNewsHub.webp" alt="Global News Hub Logo" class="logo">
+        <h1>Global News Hub</h1>
+        <nav>
+            <input type="text" id="searchBar" placeholder="Buscar jornal...">
+            <ul id="newsList">
+                <li data-url="https://www.nytimes.com">The New York Times</li>
+                <li data-url="https://www.washingtonpost.com">The Washington Post</li>
+                <li data-url="https://www.theguardian.com">The Guardian</li>
+                <li data-url="https://www.lemonde.fr">Le Monde</li>
+                <li data-url="https://www.spiegel.de">Der Spiegel</li>
+                <li data-url="https://www.elpais.com">El País</li>
+                <li data-url="https://www.folha.uol.com.br">Folha de São Paulo</li>
+                <li data-url="https://oglobo.globo.com">O Globo</li>
+                <li data-url="https://www.haaretz.com">Haaretz</li>
+                <li data-url="https://www.ynetnews.com">Yedioth Ahronoth</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <iframe id="newsFrame" src="https://www.nytimes.com" frameborder="0"></iframe>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Global News Hub</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

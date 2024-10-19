@@ -1,0 +1,120 @@
+/* Paleta de Cores */
+:root {
+    --cinza-claro: rgb(187, 193, 198);
+    --cinza-azulado: rgb(189, 195, 199);
+    --azul-acinzentado: rgb(186, 192, 197);
+    --cinza-neutro: rgb(188, 194, 199);
+    --cinza-suave: rgb(188, 194, 198);
+    --cinza-azul-intenso: rgb(190, 196, 201);
+    --cinza-azul-claro: rgb(190, 196, 200);
+    --azul-suave: rgb(187, 192, 197);
+    --cinza-neutro-variacao: rgb(188, 193, 197);
+    --cinza-claro-suave: rgb(188, 193, 198);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cinza-claro);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background-color: var(--cinza-azulado);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Logotipo */
+.logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#searchBar {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#newsList {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#newsList li {
+    background-color: var(--cinza-neutro);
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newsList li:hover {
+    background-color: var(--cinza-azul-intenso);
+    color: #fff;
+}
+
+/* Main */
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+iframe {
+    width: 100%;
+    height: 80vh;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--cinza-azulado);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #newsList {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #newsList li {
+        width: 80%;
+        text-align: center;
+    }
+
+    iframe {
+        height: 60vh;
+    }
+}
